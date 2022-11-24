@@ -1,0 +1,6 @@
+{
+    "max_strength": 20, 
+    "max_random_mov": 19, 
+    "curved_normalizer": 250,
+    "resize_factor": 3
+}
