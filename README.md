@@ -19,6 +19,23 @@ This code was produced with the help of:
 
 This code aims for a better variable naming and better structure.
 
+## How to run
+
+First, you must install the required libraries with the command
+
+```
+pip install -r requirements.txt
+```
+
+Then you can run the warper with the following command:
+
+```
+python src/warper.py <path_src_img> <name_dst_img>.jpg
+```
+
+Once you run the command, the warped image will be saved in the `assets` folder
+with the name `<name_dst_img>.jpg`.
+
 ## Benchmarking
 
 With the current implementation, the `hyperfine` command shows the following
