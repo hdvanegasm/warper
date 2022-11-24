@@ -36,6 +36,19 @@ python src/warper.py <path_src_img> <name_dst_img>.jpg
 Once you run the command, the warped image will be saved in the `assets` folder
 with the name `<name_dst_img>.jpg`.
 
+The parameters of the algorithm can be changed in the `config.json` file. The
+parameters are:
+- `max_strength`: defines the strength of the modification. The higher the 
+                  parameter, the stronger is the deformation.
+- `max_random_mov`: defines the number of deformations applied to the image.
+- `curved_normalizer`: defines a normalizer factor to the curved folding. The
+                       The higher the parameter, the smaller the effect of the
+                       curved folding.
+- `resize_factor`: defines the length of the additional margin added to the
+                   original image to prevent the corners of the paper to be
+                   outside of the warped version. The smaller the paremeter, 
+                   the thicker the margins.
+
 ## Benchmarking
 
 With the current implementation, the `hyperfine` command shows the following
