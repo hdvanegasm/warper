@@ -62,7 +62,7 @@ def apply_warping(img, mesh):
     x_mesh_pert = mesh[:, 1].reshape(img.shape[0], 
                                      img.shape[1]).astype(np.float32)
     y_mesh_pert = mesh[:, 0].reshape(img.shape[0], 
-                                    img .shape[1]).astype(np.float32)
+                                     img.shape[1]).astype(np.float32)
     perturbed_image = cv.remap(img, x_mesh_pert, y_mesh_pert,
                                cv.INTER_LINEAR)
     return perturbed_image
